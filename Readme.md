@@ -1,7 +1,7 @@
-# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
+# Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Yanina Synyavska](https://up.htmlacademy.ru/javascript/20/user/1113601).
-* Наставник: `Иван Марченко`.
+* Наставник: Иван Марченко.
 
 ---
 
@@ -48,5 +48,5 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный JavaScript](https://htmlacademy.ru/intensive/javascript)», уровень 1 от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-javascript/1113601-code-and-magick-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-javascript/1113601-code-and-magick-20
+[travis-image]: https://travis-ci.com/htmlacademy-javascript/1113601-keksobooking-20.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-javascript/1113601-keksobooking-20
