@@ -20,20 +20,23 @@ var getRandomElement = function (array) {
   return array[randomIndex];
 };
 
+var createWizards = function (quantity) {
 
-var wizards = [];
-for (var j = 0; j < wizardQuantity; j++) {
+  var wizards = [];
+  for (var j = 0; j < quantity; j++) {
 
-  var createWizard = {
+    var Wizard = {
 
-    name: getRandomElement(WIZARD_NAMES) + getRandomElement(WIZARD_SURNAMES),
-    coatColor: getRandomElement(WIZARD_COAT_COLORS),
-    eyesColor: getRandomElement(WIZARD_EYES_COLORS)
-  };
+      name: getRandomElement(WIZARD_NAMES) + ' ' + getRandomElement(WIZARD_SURNAMES),
+      coatColor: getRandomElement(WIZARD_COAT_COLORS),
+      eyesColor: getRandomElement(WIZARD_EYES_COLORS)
+    };
 
-  wizards.push(createWizard);
+    wizards.push(Wizard);
+  }
+  return wizards;
+};
 
-}
 
 var renderWizard = function (wizard) {
   var wizardElement = similarWizardTemplate.cloneNode(true);
@@ -44,6 +47,7 @@ var renderWizard = function (wizard) {
 
   return wizardElement;
 };
+var wizards = createWizards(wizardQuantity);
 
 var fragment = document.createDocumentFragment();
 for (var i = 0; i < wizardQuantity; i++) {
