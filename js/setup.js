@@ -55,7 +55,6 @@ setupClose.addEventListener('keydown', function (evt) {
   }
 });
 
-
 var setupSubmitButton = document.querySelector('.setup-submit');
 var userNameInput = document.querySelector('.setup-user-name');
 
@@ -90,7 +89,6 @@ var coatColorButton = setupWizard.querySelector('.wizard-coat');
 var eyesColorButton = setupWizard.querySelector('.wizard-eyes');
 var setupFireballButton = document.querySelector('.setup-fireball-wrap');
 
-
 coatColorButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   var coatColor = document.querySelector('input[name="coat-color"]');
@@ -103,17 +101,13 @@ eyesColorButton.addEventListener('click', function (evt) {
   var eyesColor = document.querySelector('input[name="eyes-color"]');
   eyesColor.value = getRandomElement(wizardEyesColors);
   eyesColorButton.style.fill = getRandomElement(wizardEyesColors);
-
-
 });
+
 setupFireballButton.addEventListener('click', function (evt) {
   evt.preventDefault();
-
   var fireballColor = document.querySelector('input[name="fireball-color"]');
-
   fireballColor.value = getRandomElement(wizardFireballColors);
-  setupFireballButton.style.fill = getRandomElement(wizardFireballColors);
-
+  setupFireballButton.style.background = getRandomElement(wizardFireballColors);
 });
 
 
