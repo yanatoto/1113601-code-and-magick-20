@@ -17,7 +17,9 @@ var setupClose = setup.querySelector('.setup-close');
 
 
 var onPopupEscPress = function (evt) {
-  if (evt.key === 'Escape') {
+  if (userNameInput.classList.contains('focused')) {
+    openPopup();
+  } else if (evt.key === 'Escape') {
     evt.preventDefault();
     closePopup();
   }
@@ -83,6 +85,14 @@ userNameInput.addEventListener('input', function () {
     }
   }
 });
+
+userNameInput.addEventListener('focus', function () {
+  userNameInput.classList.add('focused');
+}, true);
+
+userNameInput.addEventListener('blur', function () {
+  userNameInput.classList.remove('focused');
+}, true);
 
 var setupWizard = document.querySelector('.setup-wizard');
 var coatColorButton = setupWizard.querySelector('.wizard-coat');
